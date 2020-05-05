@@ -1,0 +1,411 @@
+html{
+    scroll-behavior:smooth
+}
+
+*{ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ font-family: 'Roboto Mono', monospace;
+font-family: 'Poppins', sans-serif;
+
+}
+a{ text-decoration: none;}
+a:hover{ text-decoration: none;}
+li{ list-style: none;}
+p{ font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.6;
+color: #606060;
+}
+h2, .service-div2 h2{
+font-size: 0.9rem;
+margin: 20px 0px 15px 0px;
+font-weight: bold;
+line-height: 1.1;
+word-spacing: 4px;
+}
+i{
+    color: #2fccd0;
+}
+
+
+/*-------------- css style from here--------*/
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,168,255,.3),rgba(0,168,255,.3)), url(dekstop.jpg);
+    background-image:
+    background-size:cover;
+    background-repeat: no-repeat;
+   background-size: 100% 100%; 
+   clip-Path: polygon(100%  0% , 100% 70% ,  50% 100% ,  0% 75% , 0%  0%);
+   position: relative;
+}
+.header:before{ 
+                content: "this is before";
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                right: 0px;
+                left: 0px;
+                background: linear-gradient(to right, #1e5799,#3ccdbb 0%, #16c9f6 100%);
+                opacity: .4;
+                z-index:-10;
+}
+.navbar:before{content: "this is before";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: linear-gradient(to right, #1e5799,#3ccdbb 0%, #16c9f6 100%);
+    opacity: .4;
+    z-index:-10;
+}
+}
+   .nav-item a{
+    color: goldenrod !important;
+}
+.header-section{
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.center-div{ top: 50%;
+    left: 50%;
+width: 100%;
+height: auto;
+position: absolute;
+transform: translate(-50%,100%);
+
+}
+.center-div p{
+    font-size: 1.3rem;
+    color: #fff;
+}
+ .header-buttons a{
+    border-radius: 100px!important;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*<!--***************three extra header part*****************-->*/
+
+.header-extradiv{
+                    width: 100%; height: auto;
+                    margin:100px auto;
+                   
+
+}
+.header-extradiv .extra-div{
+    background: #fff;
+    border: medium;
+    padding: 40px;
+    border-radius: 3px; 
+    transition: .3s;
+    text-align: center
+}
+.extra-div:hover{ box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+
+transform: translate(+25px);
+transition: .4s linear;
+}
+
+/*--***************offer section*****************--*/
+.service-offer{
+    background-color: #f7f7f9;
+    padding: 50px auto;
+    margin-bottom: 50px;
+}
+.heading{
+    margin-bottom: 50px;
+}
+.heading h1{
+     font-size: 1.5rem;
+     font-weight: 600;
+     text-transform: uppercase;
+}
+.names h1{ color: #2e2e2e;
+            font-size: 0.9rem;
+            text-transform: capitalize;
+}
+
+.progress:hover{  justify-items: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+margin: 10px;
+    transform: translate(+25px);
+    transition: .4s ease;
+}
+.progress{
+    height: .9rem!important;
+    margin-bottom: 40px!important;
+}
+.service-icon{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+/*--***************offer section end*****************--*/
+
+/*--***************award won start*****************--*/
+.project-work{
+    margin:100px auto;
+}
+.project-work h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*--***************award won end*****************--*/
+
+/*--*************** our pricing stard*****************--*/
+.pricing{ width: 100%;
+    height: 100vh;
+   
+    padding: 50px;
+    position: relative;
+    background:linear-gradient(160deg,#16c9f6 55%, #fff 0%)
+     
+}
+.card:hover{
+ box-shadow: 0px 0px 25px rgba(0, 0, 0, .3);
+ transform: translatey(-25px);
+ transition: .5s ease;
+ 
+}
+.card:hover .card-header, .card:hover .money, .card:hover .card-footer{ 
+                                                color: #50d1c0;
+}
+.money{
+font-size: 40px;
+line-height: 1.1;
+color: #606060;
+}
+.card-header{ font-size: 1.6rem;
+    font-weight: bolder;
+    background: #fff;
+    padding: 25px 9px;
+   
+}
+.card-body{
+    padding: 30px auto;
+}
+.card li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;
+}
+.card-footer{
+    background: white;
+    padding: 30px auto;
+}
+.card-footer a {
+    border-radius: 20px;
+}
+
+/*--*************** our pricing end*****************--*/
+
+/*--*************** happy clients start*****************--*/
+
+.happy-clients {
+    height: 100vh;
+    width: 100%;
+    padding: 80px auto;
+}
+.box{
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 15px rgba(0,168,255,.3);
+    border-radius: 2px;
+    transition: .4s ease;
+}
+.box:hover {
+    background: #16c9f6;
+}
+.box:hover p{
+    color: #fff;
+}
+.carousel-indicators { position: absolute;
+                        bottom: -60px;                   
+}
+.carousel-indicators li {
+    background-color: #16c9f6;
+}
+
+
+
+
+
+
+
+/*--*************** happy clients end*****************--*/
+
+/*--*************** happy clients part2*****************--*/
+.happy-clients1 {
+    height: 75vh;
+    width: 100%;
+    padding: 80px auto;
+}
+.box1{
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 0 5px 15px rgba(0,168,255,.3);
+    border-radius: 2px;
+    transition: .4s ease;
+}
+.box1:hover {
+    background: #16c9f6;
+}
+.box1:hover p{
+    color: #fff;
+}
+.box1 a img{ width: 100px;
+height: 100px;
+border-radius: 50%;
+align-self: center;
+margin-left: 90px;
+margin-top: 10px;
+}
+.box1 a{position: relative;
+align-self: center!important;}
+
+.box1 a:after{ content: "\f10d";
+font-family: fontawesome;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: linear-gradient(to right, #16c9f8);
+color: #16c9f6;
+position: absolute;
+top: 120%;
+left: 85%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box h1,.box1 h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.box h2, .box1 h2{
+    font-size: 13px;
+    font-weight: 400px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+/*--*************** happy clients part2 end*****************--*/
+
+/*--*************** contacy ous start*****************--*/
+
+
+/*--*************** contacy ous end*****************--*/
+.contact-ous{
+
+    width: 100%;
+    height: 100vh;
+    padding: 80px auto;
+    background: linear-gradient(320deg, #16c9f6 55%, #fff 0%);
+}
+.button-size{
+   background: transparent;
+    border-radius: 10px;
+    color: #fff;
+}
+form:hover .button-size{
+    color: #50d1c0;
+    background: #fff;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, .3);
+    transition: linear;
+    transform: translatey(-15px);
+}
+::placeholder{font-size: .85rem;}
+
+
+/*--*************** news letter start*****************--*/
+.newsletter { width: 100%;
+                height: auto;
+                margin: 80px auto;
+}
+.news-input{
+    border-radius: 100px 0px 0px 100px;
+    min-width: 150px;
+    min-height: 45px;
+}
+.sub-btn1{
+    border-radius: 0px 100px 100px 0px;
+}
+
+/*--*************** news letter end*****************--*/
+
+/*--*************** fotter start    *****************--*/
+footer{
+    text-align: center;
+    background: linear-gradient(#16c9f6 1000%, #fff 0% );
+    color: #fff;
+}
+.footer-section{
+    width: 100%;
+    height: auto;
+    padding: 70px 0px 20px 0;
+    background: #00abff;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer1:hover p{ color: #fff;
+
+}
+.footer-section li a{
+    font-size: .9rem;
+    line-height: 1.6;
+    font-weight: 400;
+text-transform: uppercase;
+color: #fff
+}
+
+
+
+/*--*************** fotter end    *****************--*/
+
+/*--*************** media query   *****************--*/
+
+
+@media(max-width:768px){
+.nav-item{
+    text-align: center;
+}
+.pricing{
+    height: auto;
+    margin-bottom: 50px;
+}
+.newsletter {
+    height: auto;
+    margin: 50px!important;
+}
+.newsletter.btn10{
+    margin: 50px;
+
+}
+#newsletterid h1{
+    height: auto;
+    margin: 50px;
+}
+.card2{ margin: 10px 0px 20px 0px;
+
+}
+.contact-ous,.happy-clients { height: auto;
+    margin: 50px!important;}
+
+    .happy-clients,.happy-clients1{
+        height: auto;
+    margin: 50px!important;
+    }
+
+}
